@@ -1,0 +1,132 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: wheat;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-bg);
+    line-height: 1.5;
+}
+
+main {
+    max-width: 300px;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.eq {
+    width: 300px;
+    border-radius: 5px;
+    display: block;
+}
+
+.eye {
+    background-color: var(--cyan);
+    padding: 125px;
+    width: 50px;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0;
+}
+
+.eye:hover {
+    opacity: 0.75;
+}
+
+:has(h1) {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: larger;
+    color: var(--white);
+    text-decoration: none;
+    line-height: 1;
+}
+
+h1:hover {
+    color: var(--cyan)
+}
+
+hr {
+    border: 1px solid var(--line);
+}
+
+.subtitle {
+    font-weight: 300;
+    color: var(--soft-blue);
+}
+
+.details {
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.price {
+    display: flex;
+    gap: 5px;
+}
+
+.time {
+    margin-left: auto;
+    color: var(--soft-blue);
+    min-width: 100px;
+    break-inside: avoid;
+    display: flex;
+    gap: 5px;
+}
+
+.credit {
+    color: var(--soft-blue);
+    font-weight: 300;
+    display: flex;
+    gap: 5px;
+}
+
+.avatar {
+    max-width: 30px;
+    border: 1px solid var(--white);
+    border-radius: 15px;
+}
+
+.name {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.name:hover {
+    color: var(--cyan)
+}
